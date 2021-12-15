@@ -7,29 +7,29 @@ import cv2
 
 
 @app.route("/")
-@app.route("/index", methods=['GET'])
+@app.route("/index")
 def index():
-    return render_template("index.html", login=False)
+    return render_template("index.html")
 
 @app.route("/absensi")
 def absensi():
-    return render_template("absensi.html", login=False)
+    return render_template("absensi.html")
 
 @app.route("/profil")
 def profil():
-    return render_template("profil.html", login=False)
+    return render_template("profil.html")
 
 @app.route("/about")
 def about():
-    return render_template("about.html", login=False)
+    return render_template("about.html")
 
 @app.route("/help")
 def help():
-    return render_template("help.html", login=False)
+    return render_template("help.html")
 
 @app.route("/login")
 def login():
-    return render_template("login.html", login=False)
+    return render_template("login.html")
 
 camera = cv2.VideoCapture(0)
 
